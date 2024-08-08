@@ -1,5 +1,5 @@
 let currentPage = 0;
-const itemsPerPage = 10;
+const itemsPerPage = 20;
 let allPrompts = [];
 let displayedPrompts = [];
 
