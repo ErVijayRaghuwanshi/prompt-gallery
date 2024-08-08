@@ -82,7 +82,7 @@ let allPrompts = [];
 let displayedPrompts = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('/static/prompts.json')
+    fetch('prompts.json')
         .then(response => response.json())
         .then(data => {
             allPrompts = data;
