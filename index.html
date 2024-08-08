@@ -17,17 +17,36 @@
 
 <body>
     <header>
-        <h1>Prompt Gallery</h1>
-        <!-- <input type="text" id="searchBar" placeholder="Search prompts..."> -->
-        <div class="search">
-            <input type="text" id="searchBar" class="search__input" placeholder="Search...">
-            <div class="search__icon">
-                <ion-icon name="search"></ion-icon>
+        <h1>Prompt Gallery - Interactive Image Search Interface</h1>
+        <div class="search-container">
+            <div class="search">
+                <input type="text" id="searchBar" class="search__input" placeholder="Search...">
+                <div class="search__icon">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+            </div>
+        
+            <div class="search__examples">
+                <span class="search__example" onclick="setSearchQuery('Sunset')">Sunset</span>
+                <span class="search__example" onclick="setSearchQuery('mountains')">mountains</span>
+                <span class="search__example" onclick="setSearchQuery('Fantasy')">Fantasy</span>
+                <span class="search__example" onclick="setSearchQuery('forest')">forest</span>
+                <span class="search__example" onclick="setSearchQuery('landscape')">landscape</span>
+                <span class="search__example" onclick="setSearchQuery('futuristic')">futuristic</span>
+                <span class="search__example" onclick="setSearchQuery('Retro')">Retro</span>
+                <span class="search__example" onclick="setSearchQuery('model')">model</span>
+                <span class="search__example" onclick="setSearchQuery('Cyberpunk')">Cyberpunk</span>
+                <span class="search__example" onclick="setSearchQuery('Majestic')">Majestic</span>
+                <span class="search__example" onclick="setSearchQuery('geometric')">geometric</span>
+                <span class="search__example" onclick="setSearchQuery('patterns')">patterns</span>
+                <span class="search__example" onclick="setSearchQuery('lakeside')">lakeside</span>
             </div>
         </div>
+        
     </header>
     <main id="gallery"></main>
     <script src="scripts.js"></script>
+    
 </body>
 
 </html>
